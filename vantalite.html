@@ -2,11 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VantaScript Lite</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header, footer {
+      padding: 1rem 2rem;
+      background: #101010;
+    }
+    nav a {
+      color: white;
+      margin-right: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+    .badges {
+      margin: 1rem 0;
+    }
+    .badge {
+      background: purple;
+      padding: 0.3rem 0.6rem;
+      border-radius: 0.4rem;
+      margin-right: 0.5rem;
+      display: inline-block;
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .footer-logo {
+      font-weight: bold;
+      color: #a855f7;
+    }
+    .socials a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: white;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <nav>
       <a href="index.html">Home</a>
@@ -14,34 +74,26 @@
       <a href="#">Support</a>
     </nav>
   </header>
+
   <main>
     <h1>VantaScript Lite - $4.99</h1>
     <div class="badges">
-      <span class="badge">✔️ Undetected</span>
+      <span class="badge">🛡️ Undetected</span>
       <span class="badge">🔥 Best Seller</span>
       <span class="badge">🔒 Safe</span>
     </div>
     <p>Perfect for lightweight use with essential features.</p>
     <a href="scripts.html" class="back-button">← Back</a>
   </main>
+
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">Vanta</div>
-      <p>Your go-to source for secure and optimized scripts.</p>
-      <div class="socials">
-        <a href="#">YouTube</a>
-        <a href="#">Discord</a>
-      </div>
-      <div class="footer-links">
-        <a href="#">Catalog</a>
-        <a href="#">Blog</a>
-        <a href="#">FAQ</a>
-        <a href="#">Support</a>
-        <a href="#">User Agreement</a>
-        <a href="#">Offer Agreement</a>
-      </div>
-      <div class="payments">Visa | PayPal | Crypto</div>
+    <div class="footer-logo">Vanta</div>
+    <div>Your go-to source for secure and optimized scripts.</div>
+    <div class="socials">
+      <a href="#">YouTube</a>
+      <a href="#">Discord</a>
     </div>
   </footer>
+
 </body>
 </html>
