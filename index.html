@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VantaScripts - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(20, 20, 20, 0.85);
+      padding: 1rem 2rem;
+      backdrop-filter: blur(6px);
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #7b3fe4;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav .links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav .search input {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    /* Cards */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 300px;
+      transition: transform 0.2s ease;
+      box-shadow: 0 0 10px #000;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .badge {
+      background-color: #7b3fe4;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card h2 {
+      margin: 0.5rem 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    /* Footer */
+    footer {
+      background: #141414;
+      padding: 2rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      max-width: 300px;
+    }
+
+    .footer-left h2 {
+      color: #7b3fe4;
+    }
+
+    .footer-section {
+      margin: 1rem 0;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+    }
+
+    .footer-icons i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .footer-payments img {
+      height: 24px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">VantaScripts</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="lite.html">Scripts</a>
+      <a href="support.html">Support</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to VantaScripts</h1>
+    <p>Your trusted source for premium scripts</p>
+  </header>
+
+  <!-- Script Cards -->
+  <div class="cards">
+    <a href="lite.html" class="card">
+      <div class="badge">Lite</div>
+      <h2>Vanta Lite</h2>
+      <p>Essential features at a budget price. Ideal for casual use.</p>
+    </a>
+
+    <a href="full.html" class="card">
+      <div class="badge">Full</div>
+      <h2>Vanta Full</h2>
+      <p>Complete script suite with all premium functionalities.</p>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <h2>VantaScripts</h2>
+      <p>Premium-quality scripts built for performance and security.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Navigate</h4>
+      <a href="index.html">Catalog</a>
+      <a href="#">Blog</a>
+      <a href="#">FAQ</a>
+      <a href="support.html">Support</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>Information</h4>
+      <a href="#">User Agreement</a>
+      <a href="#">Offer Agreement</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="footer-icons">
+        <a href="https://discord.gg/J6dhVNj2" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section footer-payments">
+      <h4>Payments</h4>
+      <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+      <img src="https://img.icons8.com/color/48/000000/paypal.png"/>
+      <img src="https://img.icons8.com/color/48/000000/bitcoin.png"/>
+      <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png"/>
+    </div>
+  </footer>
+
+</body>
+</html>
